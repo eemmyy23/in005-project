@@ -7,6 +7,16 @@ I am trying to make an interface for a robot connected to a Linux computer.
 
 == Table of contents aka objectives==
 
+#sidebar TableOfContents
+  * [Articles HOWTO articles]
+    * [ArticlesXSS Web security]
+    * [ArticlesDom DOM manipulation]
+    * [ArticlesStyle CSS and style]
+    * [ArticlesTips Tips and tricks]
+  * [DOMReference DOM reference]
+  * [HTMLElements HTML reference]
+  * [CSSReference CSS reference]
+
  # activate this program when user connects via ssh
   * filter the ip addresses of incoming connections
   * limit the maximum connections form the same user or robot
