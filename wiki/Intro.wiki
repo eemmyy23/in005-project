@@ -1,0 +1,16 @@
+#summary Quick intro about what I did.
+
+= Introduction =
+
+I've created a svn repository via code.google.com
+
+~/.bashrc was moved into repository work-space and a symbolic link was created into home folder 
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
