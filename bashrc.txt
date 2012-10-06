@@ -117,3 +117,9 @@ source /home/emi/work_electric/setup.bash
 export PMDDIR=/home/emi/work_electric/pmd_camcube_3/pmd_camcube_3_ros_pkg/PMDSDK2
 
 
+if [ -n "$SSH_CLIENT" ]; 
+	then text=" modified shell"
+	export PS1='\[\e[0;31m\]\u@\h:\w${text}$\[\e[m\] '
+	echo "Robot interface (IN005 PROJECT - RMA - 2012)"
+fi
+
