@@ -2,15 +2,28 @@
 
 = Introduction =
 
-I've created a svn repository via code.google.com
+The main goal is to apply the learned notions during the OS course.
+I am trying to make an interface for a robot connected to a Linux computer and to achieve the following:
+ *activate this program when user connects via ssh
+  #filter the ip addresses of incoming connections
+  #limit the maximum connections form the same user or robot
+  #provide info to the user on login
+  #about the operating system
+  #about the robot
+ *use an infinite loop 
+ *handle signals 
+ *provide simple UI
+ *manage updates and recompile the source (with program restart)
+ *
+ 
 
-~/.bashrc was moved into repository work-space and a symbolic link was created into home folder 
 
 
 
 = Details =
 
-Add your content here.  Format your content with:
+~/.bashrc was moved into repository work-space and a symbolic link was created into home folder 
+
   * Text in *bold* or _italic_
   * Headings, paragraphs, and lists
   * Automatic links to other wiki pages
