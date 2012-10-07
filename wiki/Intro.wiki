@@ -9,7 +9,7 @@ I am trying to make an interface for a robot connected to a Linux computer.
 == Table of contents aka objectives==
 
 
-  * [Articles HOWTO articles]
+  * [Intro HOWTO articles]
     * [ArticlesXSS Web security]
     * [ArticlesDom DOM manipulation]
     * [ArticlesStyle CSS and style]
