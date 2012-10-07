@@ -1,13 +1,10 @@
 #! /bin/bash
 #clear		# clear terminal window
-
-
-cd ..
+pwd
 echo "Started update script"
 svn up | grep ^At
 echo "Finished update script"
 sleep 1
 echo "Recompileing cpp files"
-cd cpp
-gcc main-loop.cpp -o startup
+gcc cpp/main-loop.cpp -o cpp/startup
 echo "All done"
