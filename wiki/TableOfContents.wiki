@@ -2,11 +2,6 @@
 
  * [Intro Introduction]
  # [ssh activate this program when user connects via ssh]
-    [ssh#Introduction filter the ip addresses of incoming connections]
-    [ssh#Details limit the maximum connections form the same user or robot]
-    provide info to the user on login
-     * about the operating system
-     * robot's status
  # force the user to enter and stay into the interface program
   * use an infinite loop 
   * handle signals 
