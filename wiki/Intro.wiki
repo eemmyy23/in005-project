@@ -15,9 +15,9 @@ Within the new file, *startup.bash*, it is established if the new shell was init
 
 == folder organisation ==
 Exluding the *bashrc* and *startup.bash* files, everything else is structured in the project folder as:
- *c/c++ source files are in the *cpp* folder
- *c/c++ executable files are in the *bin* folder
- *bash scripts are in the *bash* folder
+ * c/c++ source files are in the *cpp* folder
+ * c/c++ executable files are in the *bin* folder
+ * bash scripts are in the *bash* folder
 
 == main-loop.cpp ==
 The soucer code for  
