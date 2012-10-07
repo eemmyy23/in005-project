@@ -1,7 +1,7 @@
  * [Intro Introduction]
  # [ssh activate this program when user connects via ssh]
-  * filter the ip addresses of incoming connections
-  * limit the maximum connections form the same user or robot
+  * [ssh#Introduction filter the ip addresses of incoming connections]
+  * [ssh#Details limit the maximum connections form the same user or robot]
   * provide info to the user on login
    * about the operating system
    * robot's status
