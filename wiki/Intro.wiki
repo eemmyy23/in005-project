@@ -4,3 +4,9 @@
 
 The main goal is to apply the learned notions during the OS course.
 I am trying to make an interface for a robot connected to a Linux computer.
+
+= Workflow =
+
+The *.bashrc* was modified by including or adding another source file (startup.bash)
+
+Within the new file, *startup.bash*, it is established if the new shell was initialized by a remote client using ssh, and if so a c++ program is automatically launched. There might be some filters applied regarding the ip of the client or the maximum clients per ip.   
