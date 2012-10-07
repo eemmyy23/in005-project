@@ -20,4 +20,4 @@ Exluding the *bashrc* and *startup.bash* files, everything else is structured in
  *bash scripts are in the *bash* folder
 
 == main-loop.cpp ==
-The soucer code for 
+The soucer code for  
