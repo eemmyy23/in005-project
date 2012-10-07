@@ -11,5 +11,5 @@ if [ -n "$SSH_CLIENT" ];
   echo "Robot interface (IN005 PROJECT - RMA - 2012)"
 
   #run our cpp program
-  cpp/startup
+  bin/main-loop
 fi
