@@ -1,6 +1,6 @@
 #! /bin/bash
 #clear		# clear terminal window
-pwd
+
 echo "Started update script"
 svn up | grep ^At
 echo "Finished update script"
