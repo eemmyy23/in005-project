@@ -1,5 +1,4 @@
 #summary Quick intro about what I did.
-#sidebar TableOfContents
 
 = Introduction =
 
