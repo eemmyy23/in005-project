@@ -1,5 +1,5 @@
-#summary ssh
-<wiki:toc max_depth="1" />
+#summary activate this program when user connects via ssh
+<wiki:toc max_depth="2" />
 
 = filter the ip addresses of incoming connections =
 
