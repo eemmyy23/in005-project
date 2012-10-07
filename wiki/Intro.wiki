@@ -7,6 +7,17 @@ I am trying to make an interface for a robot connected to a Linux computer.
 
 = Workflow =
 
+== .bashrc ==
 The *.bashrc* was modified by including or adding another source file (startup.bash)
 
-Within the new file, *startup.bash*, it is established if the new shell was initialized by a remote client using ssh, and if so a c++ program is automatically launched. There might be some filters applied regarding the ip of the client or the maximum clients per ip.   
+== startup.bash ==
+Within the new file, *startup.bash*, it is established if the new shell was initialized by a remote client using ssh, and if so a c++ program is automatically launched. There might be some filters applied regarding the ip of the client or the maximum clients per ip. The working path is changed to the project directory(folder).
+
+== folder organisation ==
+Exluding the *bashrc* and *startup.bash* files, everything else is structured in the project folder as:
+ *c/c++ source files are in the *cpp* folder
+ *c/c++ executable files are in the *bin* folder
+ *bash scripts are in the *bash* folder
+
+== main-loop.cpp ==
+The soucer code for 
