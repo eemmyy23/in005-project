@@ -1,0 +1,10 @@
+#summary ssh
+
+= Introduction =
+
+Add your content here.
+
+
+= Details =
+
+~/.bashrc was moved into repository work-space and a symbolic link was created into home folder 
