@@ -9,7 +9,7 @@
   * manage updates and recompile the source (with program restart)
   * interact with bash scripts
   * escape to shell if admin
- # provide update mechanism
+ # provide update mechanism (as thread)
   * download the source form svn
   * compile the new downloaded files 
   * restart the interface after update
