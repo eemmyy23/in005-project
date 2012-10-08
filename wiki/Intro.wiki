@@ -23,7 +23,7 @@ The *.bashrc* was modified by including or adding another source file (startup.b
 == startup.bash ==
 Within this file, *startup.bash*, it is established if the new shell was initialized by a remote client using ssh, and if so a c++ program is automatically launched. There might be some filters applied regarding the ip of the client or the maximum clients per ip. The working path is changed to the project directory(folder).
 
-= folder organisation =
+= Folder organisation =
 Exluding the previous files, everything else is structured in the project folder as:
  * c/c++ source files are in the *cpp* folder
  * c/c++ executable files are in the *bin* folder
