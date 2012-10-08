@@ -5,7 +5,17 @@
 The main goal is to apply the learned notions during the OS course.
 I am trying to make an interface for a robot connected to a Linux computer.
 
-= Workflow =
+
+= Installation =
+
+== install.sh ==
+
+It's provided by the *install.sh* script. This script is supposed to:
+ * check/install all required dependencies (via apt-get)
+ * downloaded the latest source code from the repository
+ * compile everything
+ * modify the .bashrc belonging to the current user 
+
 
 == .bashrc ==
 The *.bashrc* was modified by including or adding another source file (startup.bash)
@@ -13,11 +23,13 @@ The *.bashrc* was modified by including or adding another source file (startup.b
 == startup.bash ==
 Within the new file, *startup.bash*, it is established if the new shell was initialized by a remote client using ssh, and if so a c++ program is automatically launched. There might be some filters applied regarding the ip of the client or the maximum clients per ip. The working path is changed to the project directory(folder).
 
-== folder organisation ==
+= folder organisation =
 Exluding the *bashrc* and *startup.bash* files, everything else is structured in the project folder as:
  * c/c++ source files are in the *cpp* folder
  * c/c++ executable files are in the *bin* folder
  * bash scripts are in the *bash* folder
+
+= Workflow =
 
 == main-loop.cpp ==
 This is the main program which will run as long as the user is logged in.
