@@ -1,12 +1,19 @@
 #! /bin/bash
 clear
-echo Installing the software...
+echo Installing the software... 
 
-export PRJ_DIR=`dirname $BASH_SOURCE`
+relativeDir=`dirname $BASH_SOURCE`
+#we will stay in our project root-folder all the time
+cd $relativeDir
+
+#get the absolute path to project folder
+export PRJ_DIR=`pwd`
+echo "project dir $PRJ_DIR"
+
+#remove this file
 rm $BASH_SOURCE
-cd $PRJ_DIR
 
-#we will download the program in the same folder as the install.sh
+#we will download the program in the same folder where this file is
 svn checkout http://in005-project.googlecode.com/svn/trunk/ $PRJ_DIR
 echo Your files were downloaded in $PRJ_DIR
 
