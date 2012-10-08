@@ -119,3 +119,12 @@ export PMDDIR=/home/emi/work_electric/pmd_camcube_3/pmd_camcube_3_ros_pkg/PMDSDK
 source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
 source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
 source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
