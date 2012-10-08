@@ -128,3 +128,8 @@ source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
 source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
 source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
 source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
