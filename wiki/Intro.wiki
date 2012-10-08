@@ -8,6 +8,12 @@ I am trying to make an interface for a robot connected to a Linux computer.
 
 = Installation =
 
+== quick install ==
+navigate to the folder where you want to install then:
+ * wget http://in005-project.googlecode.com/svn/trunk/install.sh
+ * chmod +x install.sh
+ * ./install.sh
+
 == install.sh ==
 
 It's provided by the *install.sh* script. This script is supposed to:
