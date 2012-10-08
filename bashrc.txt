@@ -116,5 +116,6 @@ source /home/emi/work_electric/setup.bash
 #export PATH=~/bin:"/opt/ros/electric/ros/bin:/opt/ros/electric/ros/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games"
 export PMDDIR=/home/emi/work_electric/pmd_camcube_3/pmd_camcube_3_ros_pkg/PMDSDK2
 
-source ~/Dropbox/EMI-RMA/googleSVN/in005-project/startup.bash
-
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
+source /home/emi/Dropbox/EMI-RMA/qwerty/startup.bash
