@@ -9,6 +9,9 @@ if [ -n "$SSH_CLIENT" ];
   export PRJ_DIR=`pwd`
   echo "project dir $PRJ_DIR"
 
+  #make sure that all scripts are executabile
+  chmod +x bash/*
+
   #text that will apear after login
   echo "Robot interface (IN005 PROJECT - RMA - 2012)"
 
