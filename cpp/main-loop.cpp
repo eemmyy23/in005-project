@@ -9,7 +9,7 @@ int main(){
 	
 	pthread_t thread;
 	int ret;
-  int update_time = 5; //recheck every n seconds
+  int update_time = 15; //recheck every n seconds
   static int counter = 0;
 	printf("\nStarted the update thread.It will run each %d seconds\n", update_time);
 	if ((ret = pthread_create(& thread, NULL, update_thread, (void *) update_time)) != 0) {

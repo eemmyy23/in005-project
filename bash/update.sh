@@ -4,8 +4,8 @@
 echo "Started update script"
 svn up | grep ^At
 echo "Finished update script"
-sleep 1
 
+#Some new scripts could be downloaded
 #make sure that all scripts are executabile
 chmod +x bash/*
 
