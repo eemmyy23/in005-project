@@ -2,7 +2,7 @@
 #clear		# clear terminal window
 
 echo "Started update script"
-svn up | grep ^At
+#svn up
 echo "Finished update script"
 
 #Some new scripts could be downloaded
@@ -11,4 +11,7 @@ chmod +x bash/*
 
 echo "Recompileing"
 bash/compile.sh
-echo "All done"
+bash/restart.sh
+
+
+
