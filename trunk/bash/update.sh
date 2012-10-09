@@ -13,5 +13,3 @@ echo "Recompileing"
 bash/compile.sh
 bash/restart.sh
 
-
-
