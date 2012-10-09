@@ -2,36 +2,36 @@
 #include <stdlib.h> //to call system() func
 #include <pthread.h> //for threads
 #include <unistd.h> //for usleep
-void * fn_thread(void * number); //thread header
+void * update_thread(void * seconds); //thread header
 static int counter = 0;
 int main(){
 	printf("\nI am the main program\n");
-	printf("\nThere is nothing eles to do\n");
-	//system("bash/update.sh");
-
+	
 	pthread_t thread;
 	int ret;
-  int i = 5*10; //ecah 5 seconds
+  int update_time = 5; //recheck every n seconds
   static int counter = 0;
-
-	if ((ret = pthread_create(& thread, NULL, fn_thread, (void *) i)) != 0) {
+	printf("\nStarted the update thread.It will run each %d seconds\n", update_time);
+	if ((ret = pthread_create(& thread, NULL, update_thread, (void *) update_time)) != 0) {
 		printf("\nERROR creating thread\n");
     exit(EXIT_FAILURE);
-        }
+	}
 
+
+printf("\nThere is nothing eles to do\n");
 	for(;;);
 	
 	printf("\nI won't be executed\n");	
 	return true;
 }
 
-void * fn_thread(void * num) {
-    int number = (int) num;
+void * update_thread(void * seconds) {
+    int sleep = (int) seconds;
     while (true) {
-        usleep(number * 100000);
-        //XXXXXX
-        counter++;
-        fprintf(stdout, "Thread %d : counter = %d\n", number, counter);
+        usleep(sleep * 1000000);
+				fprintf(stdout, "Checking for updates ....");        
+				system("bash/update.sh");
+				fprintf(stdout, "\n");        
     }
     pthread_exit(NULL);
 }
