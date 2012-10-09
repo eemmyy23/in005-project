@@ -16,11 +16,11 @@ if [ -n "$SSH_CLIENT" ];
   echo "Robot interface (IN005 PROJECT - RMA - 2012)"
 
   #start the cpp program
-	while:
+  while true
 	do
-		bin/main-loop
 		echo "The main loop program was terminated"
 		echo "Retrying to relaunh in 5 seconds ..."
 		sleep 5
+		bin/main-loop
 	done
 fi
