@@ -5,8 +5,13 @@
 void * update_thread(void * seconds); //thread header
 static int counter = 0;
 int main(){
-	printf("\nI am the main program\n");
-	
+	long pid = (long) getpid();
+	printf("\nI am the main program. PID= %ld \n",pid);
+
+  FILE* pFile = fopen("pid.txt", "w");
+  fprintf(pFile, "%ld\n",pid);
+  fclose(pFile);
+
 	pthread_t thread;
 	int ret;
   int update_time = 15; //recheck every n seconds
