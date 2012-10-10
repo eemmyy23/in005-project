@@ -16,14 +16,15 @@ rm $BASH_SOURCE
 #we will download the program in the same folder where this file is
 svn checkout http://in005-project.googlecode.com/svn/trunk/ $PRJ_DIR
 echo Your files were downloaded in $PRJ_DIR
+#make scripts executabile
+chmod +x startup.sh
 chmod +x bash/*
+#compile cpp files
+bash/compile.sh
 
 #modify ~/.bashrc
 username=`whoami`
-echo "source ${PRJ_DIR}/startup.bash" >> /home/${username}/.bashrc
+echo "${PRJ_DIR}/startup.sh" >> /home/${username}/.bashrc
 echo Your ~/.bashrc file was modified
-
-#compile 
-bash/compile.sh
 
 echo Finished installing the software!
