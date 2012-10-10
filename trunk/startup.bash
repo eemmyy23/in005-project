@@ -1,4 +1,5 @@
 #test if length of "STRING" is non-zero.
+SSH_CLIENT=test
 if [ -n "$SSH_CLIENT" ];
  then
   relativeDir=`dirname $BASH_SOURCE`
@@ -15,7 +16,8 @@ if [ -n "$SSH_CLIENT" ];
   #text that will apear after login
   echo "Robot interface (IN005 PROJECT - RMA - 2012)"
 
-  #start the cpp program
-	bin/main-loop
+  #start the main program
+	#bin/main-loop
+	bash/main-loop.sh
 
 fi
