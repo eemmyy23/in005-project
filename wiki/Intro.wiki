@@ -27,6 +27,7 @@ Exluding the previous files, everything else is structured in the project folder
  * c/c++ executable files are in the *bin* folder
  * bash scripts are in the *bash* folder
 = Workflow =
+http://in005-project.googlecode.com/files/20121010_011736.jpg
 == main-loop.cpp ==
 This is the main program which will run as long as the user is logged in.
 It is an user interface, providing a predefined set of options for the user's needs.
