@@ -1,5 +1,5 @@
 #test if length of "STRING" is non-zero.
-SSH_CLIENT=test
+#SSH_CLIENT=test
 if [ -n "$SSH_CLIENT" ];
  then
   relativeDir=`dirname $BASH_SOURCE`
