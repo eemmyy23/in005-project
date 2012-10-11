@@ -7,6 +7,7 @@ I am trying to make an interface for a robot connected to a Linux computer.
 == quick install ==
 navigate to the folder where you want to install then:
 {{{ 
+export http_proxy="http://proxy-address:port/"
 wget http://in005-project.googlecode.com/svn/trunk/install.sh
 chmod +x install.sh
 ./install.sh
