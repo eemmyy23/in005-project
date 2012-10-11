@@ -5,10 +5,10 @@ echo "Installing the software..."
 echo "Enter your password:"
 read usrPass
 
-echo "$usrPass" | sudo -S apt-get install subversion
+echo "$usrPass" | sudo -S apt-get -y install subversion
 
 relativeDir=`dirname $BASH_SOURCE`
-#we will stay in our project root-folder all the time
+#enter project root-folder all the time
 cd $relativeDir
 
 #get the absolute path to project folder
@@ -27,7 +27,7 @@ chmod +x startup.sh
 chmod +x bash/*
 
 #install dependencies.sh
-source bash/dependencies.sh "emi"
+source bash/dependencies.sh "$usrPass"
 
 #compile cpp files
 bash/compile.sh
