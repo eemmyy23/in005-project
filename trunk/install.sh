@@ -16,9 +16,14 @@ rm $BASH_SOURCE
 #we will download the program in the same folder where this file is
 svn checkout http://in005-project.googlecode.com/svn/trunk/ $PRJ_DIR
 echo Your files were downloaded in $PRJ_DIR
+
 #make scripts executabile
 chmod +x startup.sh
 chmod +x bash/*
+
+#install dependencies.sh
+source dependencies.sh
+
 #compile cpp files
 bash/compile.sh
 
