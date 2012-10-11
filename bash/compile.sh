@@ -2,6 +2,6 @@
 rm -rf bin
 mkdir bin
 echo "Compileing cpp files"
-gcc cpp/main-loop.cpp -o bin/main-loop -lpthread
+g++ cpp/main-loop.cpp -o bin/main-loop -lpthread
 echo "Finished compileing" 
 
