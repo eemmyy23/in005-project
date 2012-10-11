@@ -25,10 +25,10 @@ int main(){
 
 
 printf("\nThere is nothing eles to do\n");
-	for(;;);
-	
+	//for(;;);
+	pthread_join(thread, NULL);
 	printf("\nI won't be executed\n");	
-	return true;
+	return 0;
 }
 
 void * update_thread(void * seconds) {

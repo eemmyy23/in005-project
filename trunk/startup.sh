@@ -15,12 +15,19 @@ if [ -n "$SSH_CLIENT" ];
   chmod +x bash/*
 
   #text that will apear after login
-  echo "Robot interface (IN005 PROJECT - RMA - 2012)"
-  echo "PID: $$"
-  #start the main program
-	#bin/main-loop
+	#passed as argument to the childbash
+	title="Robot interface (IN005 PROJECT - RMA - 2012)"
+	echo $title
+  echo "PID: $BASHPID"
+  
+	
+	nohup bin/main-loop 2>/dev/null 1>/dev/null &
+	
+	#start the main program
+	#do not permit acces to the shell when exit form main-loop.sh
+	echo "starting main-loop.sh"
   while true
-	do
-	bash/main-loop.sh
-	done
+		do
+			bash/main-loop.sh "$title"
+		done
 fi
