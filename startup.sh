@@ -26,8 +26,8 @@ if [ -n "$SSH_CLIENT" ];
 	#start the main program
 	#do not permit acces to the shell when exit form main-loop.sh
 	echo "starting main-loop.sh"
-  while true
-		do
+  #while true
+	  # do
 			bash/main-loop.sh "$title"
-		done
+		#done
 fi
