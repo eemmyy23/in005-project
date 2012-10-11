@@ -16,6 +16,7 @@ exec ( string $command [, array &$output [, int &$return_var ]] )
 }
 */
 
+/************* PID, KILL ***********************/
 function statusPID($pid){
 exec ( "ps $pid", &$out);
 return count($out) - 1;
@@ -32,8 +33,8 @@ function infoPID($array){
 	return $proc;
 }
 
-function statusCMD($cmd){
-exec ( 'pgrep -f "'.$cmd.'"', &$pid);
+function statusCMD($cmd,$type = "-f"){
+exec ( 'pgrep '.$type.' "'.$cmd.'"', &$pid);
 array_pop($pid);
 return $pid;
 }
@@ -42,9 +43,10 @@ function killCMD($cmd){
 	$pids = statusCMD($cmd);
 	foreach ($pids as $pid)
 		exec ("kill $pid");
-		sleep(5);
 }
 
+
+/************* (RE)START SCRIPTS ***********************/
 
 function start($script){
 	exec ($script, &$out);
@@ -56,6 +58,7 @@ function restart ($script, $search = false){
 	else killCMD ($script);
 	start($script);
 }
+
 function start_once ($script, $search = false){
 	if($search !=false) {
 		if (count(statusCMD($search))){
@@ -67,8 +70,7 @@ function start_once ($script, $search = false){
 }
 
 
-
-
+/************* (RE)START SCRIPTS ***********************/
 
 ?>
 
