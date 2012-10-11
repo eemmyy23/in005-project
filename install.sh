@@ -1,6 +1,11 @@
 #! /bin/bash
 clear
-echo Installing the software... 
+echo "Installing the software..."
+
+echo "Enter your password:"
+read usrPass
+
+echo "$usrPass" | sudo -S apt-get install subversion
 
 relativeDir=`dirname $BASH_SOURCE`
 #we will stay in our project root-folder all the time
