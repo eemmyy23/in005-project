@@ -19,7 +19,7 @@ echo "project dir $PRJ_DIR"
 rm $BASH_SOURCE
 
 #is there a proxy?
-if [-n $http_proxy ];then
+if [ -n $http_proxy ];then
   echo $http_proxy
 fi
 
