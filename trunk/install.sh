@@ -22,7 +22,7 @@ chmod +x startup.sh
 chmod +x bash/*
 
 #install dependencies.sh
-source dependencies.sh
+source bash/dependencies.sh "emi"
 
 #compile cpp files
 bash/compile.sh
