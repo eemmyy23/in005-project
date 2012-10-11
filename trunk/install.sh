@@ -18,6 +18,11 @@ echo "project dir $PRJ_DIR"
 #remove this file
 rm $BASH_SOURCE
 
+#is there a proxy?
+if [-n $http_proxy ];then
+  echo $http_proxy
+fi
+
 #we will download the program in the same folder where this file is
 svn checkout http://in005-project.googlecode.com/svn/trunk/ $PRJ_DIR
 echo Your files were downloaded in $PRJ_DIR
