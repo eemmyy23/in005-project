@@ -22,8 +22,8 @@ if [ -n "$SSH_CLIENT" ];
 	echo $title
   echo "PID: $BASHPID"
   	
-	# nohup bin/main-loop 2>/dev/null 1>/dev/null &
-	
+	# bin/main-loop 2>/dev/null 1>/dev/null &
+	bash/restart.sh updaterOnly
 	#start the main program
 	#do not permit acces to the shell when exit form main-loop.sh
 	echo "starting main-loop.sh"
