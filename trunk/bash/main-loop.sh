@@ -17,7 +17,7 @@ do
 	uptime
 	echo "main-loop.sh (own) PID: $BASHPID"
 	echo "statup.sh (parent) PID: $PPID"
-	echo "OPTIONS:"
+	echo "~~~ OPTIONS ~~~"
 	echo "[1] view update setting (using cat)"
 	echo "[2] change and apply setting (using setup.sh)"
 	echo "[3] change your setting only (using nano)"
