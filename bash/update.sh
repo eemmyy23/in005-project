@@ -22,6 +22,6 @@ chmod +x bash/*
 
 echo "Recompileing"
 bash/compile.sh
-#bash/restart.sh
+bash/restart.sh appOnly
 sleep 10
 echo "*** Update finished" >&2

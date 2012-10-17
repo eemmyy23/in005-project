@@ -66,3 +66,5 @@ echo Your ~/.bashrc file was modified
 echo Finished installing the software!
 
 bash/setup.sh
+
+./startup.sh
