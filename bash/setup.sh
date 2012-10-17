@@ -3,8 +3,6 @@
 
 #check if file already exists
 
-
-
 function questions {
 	
 	# ther is no validation implemented, so the user is alerted
@@ -51,6 +49,8 @@ function save {
 	echo "silent=$silent" >> config.sh
 	echo "action=$action" >> config.sh
 	echo "pass=$pass" >> config.sh
+	
+	bash/restart.sh updaterOnly
 
 }
 

@@ -19,9 +19,10 @@ do
 	echo "statup.sh (parent) PID: $PPID"
 	echo "OPTIONS:"
 	echo "[1] view update setting (using cat)"
-	echo "[2] change your setting (using nano)"
-	echo "[3] manual check for updates"
-	echo "[4] test.sh"
+	echo "[2] change and apply setting (using setup.sh)"
+	echo "[3] change your setting only (using nano)"
+	echo "[4] apply settings to auto-update script"
+	echo "[5] manual check for updates"
 	echo "[r] restart this"
 	echo "[x] exit to shell (as root)"
 	echo "";echo ""
@@ -30,11 +31,13 @@ do
 	case $goto in
 	# 1) (nohup bin/main-loop 2>/dev/null 1>/dev/null &);waitForEnter;;
 	  1) cat config.sh;waitForEnter;;	
-		2) nano config.sh;;
-		3) bash/update.sh 1>/dev/null &
+		2) bash/setup.sh;;
+		3) nano config.sh;;
+		4) bash/restart.sh updaterOnly;;
+		5) bash/update.sh 1>/dev/null &
 				sleep .2
 				waitForEnter;;
-		r) exit 0;;
+		r) bash/restart.sh appOnly;;
 		x) 	kill -kill $PPID
 				exit 0;;
 		*) echo "Please select a valid option";waitForEnter;;

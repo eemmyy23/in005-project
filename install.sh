@@ -2,7 +2,7 @@
 clear
 echo "Installing the software..."
 
-#version lsb_release -d
+#linux dist, version 				lsb_release -d
 
 
 # Autentificate reading the password and pipe-ing it to apt-get
@@ -57,7 +57,7 @@ bash/dependencies.sh "$usrPass"
 #compile cpp files
 source bash/compile.sh
 
-#modify ~/.bashrc #####################################################################
+#modify ~/.bashrc
 echo "${PRJ_DIR}/startup.sh" >> /home/`whoami`/.bashrc
 echo Your ~/.bashrc file was modified
 
