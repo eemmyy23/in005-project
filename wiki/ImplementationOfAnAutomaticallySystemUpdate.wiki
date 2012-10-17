@@ -11,4 +11,9 @@ Many developers are using online tools to be able to share the code with colleag
 
 = Details =
 
-There is provided, a small installation script, which will download 
+There is provided, a small installation script which has the following features: 
+* takes into account the environment of the current system (OS version, proxy settings)
+* installs any needed dependencies
+* downloads the source code of the program itself
+* compiles the required files
+* configures the program according to the user preferences     
