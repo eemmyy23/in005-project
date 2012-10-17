@@ -1,6 +1,8 @@
 #test if length of "STRING" is non-zero.
-#SSH_CLIENT=test
+
 trap "echo Not so fast (Please autentificate first)" SIGINT SIGTERM SIGTSTP
+
+SSH_CLIENT=test
 if [ -n "$SSH_CLIENT" ];
  then
   relativeDir=`dirname $BASH_SOURCE`
@@ -10,7 +12,7 @@ if [ -n "$SSH_CLIENT" ];
   #get the absolute path to project folder
   export PRJ_DIR=`pwd`
   echo "project dir $PRJ_DIR"
-  kkt="caca"
+  
   #make sure that all scripts are executabile
   chmod +x bash/*
 
@@ -19,15 +21,14 @@ if [ -n "$SSH_CLIENT" ];
 	title="Robot interface (IN005 PROJECT - RMA - 2012)"
 	echo $title
   echo "PID: $BASHPID"
-  
-	
-	nohup bin/main-loop 2>/dev/null 1>/dev/null &
+  	
+	# nohup bin/main-loop 2>/dev/null 1>/dev/null &
 	
 	#start the main program
 	#do not permit acces to the shell when exit form main-loop.sh
 	echo "starting main-loop.sh"
-  #while true
-	  # do
+  while true
+	  do
 			bash/main-loop.sh "$title"
-		#done
+		done
 fi
