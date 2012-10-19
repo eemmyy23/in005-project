@@ -38,7 +38,7 @@ do
 		5) bash/update.sh 1>/dev/null &
 				sleep .2
 				waitForEnter;;
-    6) echo "i am now udated";;
+    6) echo "i am now udated";waitForEnter;;
 		r) bash/restart.sh appOnly;;
 		x) 	kill -kill $PPID
 				exit 0;;
