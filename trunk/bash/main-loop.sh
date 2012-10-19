@@ -23,6 +23,7 @@ do
 	echo "[3] change your setting only (using nano)"
 	echo "[4] apply settings to auto-update script"
 	echo "[5] manual check for updates"
+  echo "[6] test"
 	echo "[r] restart this"
 	echo "[x] exit to shell (as root)"
 	echo "";echo ""
@@ -37,6 +38,7 @@ do
 		5) bash/update.sh 1>/dev/null &
 				sleep .2
 				waitForEnter;;
+    6) echo "i am now udated";;
 		r) bash/restart.sh appOnly;;
 		x) 	kill -kill $PPID
 				exit 0;;
