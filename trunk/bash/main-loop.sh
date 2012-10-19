@@ -41,7 +41,7 @@ do
 		5) bash/update.sh 1>/dev/null &
 				sleep .2
 				waitForEnter;;
-    6) echo "i am now udated";;;
+    6) echo "i am now udated";;
     q) echo "period=0" > config.sh;bash/restart.sh updaterOnly;echo "updates disabled";waitForEnter;;
     w) echo "period=4" > config.sh;bash/restart.sh updaterOnly;echo "updates disabled";waitForEnter;;
     e) echo "period=15" > config.sh;bash/restart.sh updaterOnly;echo "updates disabled";waitForEnter;;
