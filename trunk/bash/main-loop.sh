@@ -24,6 +24,9 @@ do
 	echo "[4] apply settings to auto-update script"
 	echo "[5] manual check for updates"
   echo "[6] test"
+  echo "[q] disable automatic updates"  
+  echo "[w] set interval 4 sec"
+  echo "[e] set interval 15 sec"
 	echo "[r] restart this"
 	echo "[x] exit to shell (as root)"
 	echo "";echo ""
@@ -38,7 +41,10 @@ do
 		5) bash/update.sh 1>/dev/null &
 				sleep .2
 				waitForEnter;;
-    6) echo "i am now udated";waitForEnter;;
+    6) echo "i am now udated";;;
+    q) echo "period=0" > config.sh;bash/restart.sh updaterOnly;echo "updates disabled";waitForEnter;;
+    w) echo "period=4" > config.sh;bash/restart.sh updaterOnly;echo "updates disabled";waitForEnter;;
+    e) echo "period=15" > config.sh;bash/restart.sh updaterOnly;echo "updates disabled";waitForEnter;;
 		r) bash/restart.sh appOnly;;
 		x) 	kill -kill $PPID
 				exit 0;;
