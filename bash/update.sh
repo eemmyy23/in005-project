@@ -13,7 +13,7 @@ if mkdir "$lockdir"
 	fi
 	
 echo "Started update script"
-#svn up
+svn up
 echo "Finished update script"
 
 #Some new scripts could be downloaded
