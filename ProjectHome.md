@@ -1,0 +1,4 @@
+-modify the bash shell for ssh connections
+-run a single c++ program in infinite loop
+-create specific bash scripts for certain tasks
+-make threads that execute other c++ some tasks or shell commands / scripts
